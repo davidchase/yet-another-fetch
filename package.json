@@ -1,0 +1,29 @@
+{
+  "name": "yet-another-fetch",
+  "version": "1.0.0",
+  "description": "Task wrapper around Fetch",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidchase/yet-another-fetch.git"
+  },
+  "keywords": [
+    "task",
+    "fetch",
+    "promise",
+    "either"
+  ],
+  "author": "David Chase <davidchase03@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidchase/yet-another-fetch/issues"
+  },
+  "homepage": "https://github.com/davidchase/yet-another-fetch#readme",
+  "dependencies": {
+    "@briancavalier/yet": "1.1.0",
+    "data.either": "1.4.0"
+  }
+}
