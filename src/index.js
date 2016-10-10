@@ -1,5 +1,6 @@
 import {getFromEither, compose, fromPromise} from './fn'
 
+export {runTask} from '@briancavalier/yet'
 export const fetchT = compose(fromPromise, fetch)
 export const textT = fetchTask => fetchTask.chain(getFromEither('text'))
 export const jsonT = fetchTask => fetchTask.chain(getFromEither('json'))
