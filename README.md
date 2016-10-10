@@ -51,4 +51,4 @@ The method that actually runs the task (nothing is fetched until this method is 
 
 
 
-<sup>[1](#singlepath)</sup>Task used in this library is [yet](https://github.com/briancavalier/yet) which provides a single path or only cares about resolving values. The errors handled in this library are done via Either monad from [data.either](https://github.com/folktale/data.either)
+<sup id="singlepath">[1](#singlepath)</sup>Task used in this library is [yet](https://github.com/briancavalier/yet) which provides a single path or only cares about resolving values. The errors handled in this library are done via Either monad from [data.either](https://github.com/folktale/data.either)
