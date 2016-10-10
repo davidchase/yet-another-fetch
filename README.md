@@ -3,7 +3,7 @@
 
 A simple [Task](https://github.com/briancavalier/yet) for [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-Transforms Fetch into a lazy composable single path[^1] utility.
+Transforms Fetch into a lazy composable single path<sup><a href="#singlepath">1</a></sup> utility.
 
 ## Install
 
@@ -51,4 +51,4 @@ The method that actually runs the task (nothing is fetched until this method is 
 
 
 
-[^1]: Task used in this library is [yet](https://github.com/briancavalier/yet) which provides a single path or only cares about resolving values. The errors handled in this library are done via Either monad from [data.either](https://github.com/folktale/data.either)
+<sup>[1](#singlepath)</sup>Task used in this library is [yet](https://github.com/briancavalier/yet) which provides a single path or only cares about resolving values. The errors handled in this library are done via Either monad from [data.either](https://github.com/folktale/data.either)
