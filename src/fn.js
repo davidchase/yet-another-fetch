@@ -14,4 +14,8 @@ const resolveLeft = resolve => err => resolve(Left(err))
 const getFromPromise = type => resp => fromPromise(resp[type]())
 export const getFromEither = type => either => either.bimap(taskOf, getFromPromise(type)).merge()
 
-export const fromPromise = promise => task(resolve => promise.then(resolveRight(resolve), resolveLeft(resolve)))
+export const fromPromise = promise => task(resolve => {
+  let killed = false
+  !killed && promise.then(resolveRight(resolve), resolveLeft(resolve))
+  return {kill: () => killed = true}
+})
